@@ -14,7 +14,8 @@
             <h1 class="logo">PG<span>Book</span></h1>       
             <div class="search-bar">         
                 <input type="text" id="search-input" placeholder="Search by location or PG name...">         
-                <button id="search-btn"><i class="fas fa-search"></i></button>      
+                <button id="search-btn"><i class="fas fa-search"></i></button>       
+                <input type="text" id="searchBar" placeholder="Search for location or PG name">   
                 <div id="resultsContainer"></div> 
             </div>     
         </div>   
@@ -33,7 +34,17 @@
                 <select id="room-type">           
                     <option value="all">All</option>           
                     <option value="single">Single Room</option>           
-                    <option value="shared">Shared Room</option>         
+                    <option value="two-share">Two Share Room</option>           
+                    <option value="three-share">Three Share Room</option>           
+                    <option value="four-share">Four Share Room</option>         
+                </select>       
+            </div>       
+            <div class="filter-group">         
+                <label for="pg-type">PG Type:</label>         
+                <select id="pg-type">           
+                    <option value="all">All</option>           
+                    <option value="mens">Men's PG</option>           
+                    <option value="womens">Women's PG</option>         
                 </select>       
             </div>       
             <button id="apply-filters">Apply Filters</button>     
@@ -44,7 +55,30 @@
     <main class="room-listings">     
         <div class="container">       
             <div class="room-grid" id="room-grid">         
-                <!-- Room cards will be dynamically inserted here -->       
+                <div class="room-card" data-pg-type="mens" data-room-type="single">
+                    <h2>Greenwood Men's PG</h2>
+                    <p>Location: Gachibowli, Hyderabad</p>
+                    <p>Price: ₹8000/month</p>
+                    <p>Type: Single Room</p>
+                </div>
+                <div class="room-card" data-pg-type="womens" data-room-type="two-share">
+                    <h2>Sunrise Women's PG</h2>
+                    <p>Location: Madhapur, Hyderabad</p>
+                    <p>Price: ₹6000/month</p>
+                    <p>Type: Two Share Room</p>
+                </div>
+                <div class="room-card" data-pg-type="mens" data-room-type="three-share">
+                    <h2>BlueNest Men's PG</h2>
+                    <p>Location: Koramangala, Bengaluru</p>
+                    <p>Price: ₹7500/month</p>
+                    <p>Type: Three Share Room</p>
+                </div>
+                <div class="room-card" data-pg-type="womens" data-room-type="four-share">
+                    <h2>Lavender Women's PG</h2>
+                    <p>Location: Indiranagar, Bengaluru</p>
+                    <p>Price: ₹5000/month</p>
+                    <p>Type: Four Share Room</p>
+                </div>       
             </div>     
         </div>   
     </main>    
@@ -52,7 +86,7 @@
     <!-- Footer -->   
     <footer class="footer">     
         <div class="container">       
-            <p>&copy; 2025 ARK SARMA. All rights reserved.</p>     
+            <p>&copy; 2025 PGBook. All rights reserved.</p>     
         </div>   
     </footer>    
     
