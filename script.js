@@ -5,7 +5,7 @@ const rooms = [
       name: "Cozy PG for Students",
       type: "shared",
       price: 4000,
-      image: "asset/images/room1.png",
+      image: "Asset/images/room1.png",
       description: "Comfortable shared room with Wi-Fi and meals included.",
     },
     {
@@ -13,7 +13,7 @@ const rooms = [
       name: "Single Room with AC",
       type: "single",
       price: 7000,
-      image: "asset/images/room2.png",
+      image: "Asset/images/room2.png",
       description: "Private AC room with attached bathroom.",
     },
     {
@@ -21,7 +21,7 @@ const rooms = [
       name: "Luxury PG for Professionals",
       type: "shared",
       price: 6000,
-      image: "asset/images/room3.png",
+      image: "Asset/images/room3.png",
       description: "Spacious shared room with premium amenities.",
     },
   ];
