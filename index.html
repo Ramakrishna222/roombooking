@@ -13,7 +13,8 @@
         <div class="container">       
             <h1 class="logo">PG<span>Book</span></h1>       
             <div class="search-bar">         
-                <input type="text" id="search-input" placeholder="Search by location or PG name...">          
+                <input type="text" id="search-input" placeholder="Search by location or PG name...">         
+                <button id="search-btn"><i class="fas fa-search"></i></button>      
                 <div id="resultsContainer"></div> 
             </div>     
         </div>   
@@ -24,8 +25,8 @@
         <div class="container">       
             <div class="filter-group">         
                 <label for="price-range">Price Range:</label>         
-                <input type="range" id="price-range" min="5000" max="10000" value="4000">         
-                <span id="price-value">₹4000</span>       
+                <input type="range" id="price-range" min="0" max="10000" value="5000">         
+                <span id="price-value">₹5000</span>       
             </div>       
             <div class="filter-group">         
                 <label for="room-type">Room Type:</label>         
